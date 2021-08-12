@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdfefecc;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'PT Serif', serif; */
+}
+
+p {
+    margin-top: 15px;
+}
+
+hr {
+    background-color: rgb(125, 187, 74);
+    height: 20px;
+    margin-top: -5px;
+    margin-bottom: -1px;
+}
+
+#header {
+    margin: 0px;
+    width: 600px;
+    position: fixed;
+    z-index: 2;
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav li a {
+    background-color: #111166;
+    min-width: 150px;
+    color: #fecabf;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: #5d8aa8;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+.nav>li {
+    float: left;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -150px;
+    top: 0px;
+}
+
+.imagen {
+    z-index: 1;
+    position: relative;
+    margin: 0px;
+}
+
+.texto {
+    z-index: 1;
+    position: relative;
+    margin: 30px 20px 20px 20px;
+    text-align: justify;
+}
